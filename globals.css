@@ -1,0 +1,361 @@
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================
+   LIBRIS CORE COLOR PALETTE
+   ============================================ */
+
+:root {
+  /* Core Brand Colors */
+  --white: #FFFFFF;
+  --deep-purple: #4B0082;
+  --dark-gray: #333333;
+  --black: #000000;
+
+  /* White Variations */
+  --white-tone-1: #F2F2F2;
+  --white-tone-2: #E6E6E6;
+  --white-tone-3: #D9D9D9;
+  --white-shade-1: #BFBFBF;
+  --white-shade-2: #808080;
+  --white-shade-3: #404040;
+
+  /* Deep Purple Variations */
+  --purple-tint-1: #7A3BA3;
+  --purple-tint-2: #A67AC7;
+  --purple-tint-3: #D4B8E8;
+  --purple-tone-1: #5C3F6E;
+  --purple-tone-2: #6B577C;
+  --purple-tone-3: #786B89;
+  --purple-shade-1: #3A0066;
+  --purple-shade-2: #290048;
+  --purple-shade-3: #19002E;
+
+  /* Dark Gray Variations */
+  --gray-tint-1: #4D4D4D;
+  --gray-tint-2: #666666;
+  --gray-tint-3: #808080;
+  --gray-tone-1: #3F3F3F;
+  --gray-tone-2: #474747;
+  --gray-tone-3: #505050;
+  --gray-shade-1: #262626;
+  --gray-shade-2: #1A1A1A;
+  --gray-shade-3: #0D0D0D;
+
+  /* Black Variations */
+  --black-tint-1: #1A1A1A;
+  --black-tint-2: #333333;
+  --black-tint-3: #4D4D4D;
+  --black-tone-1: #262626;
+  --black-tone-2: #404040;
+  --black-tone-3: #595959;
+
+  /* Semantic Color Mappings */
+  --font-size: 16px;
+  --background: var(--black);
+  --foreground: var(--white);
+  --card: var(--black-tint-1);
+  --card-foreground: var(--white);
+  --popover: var(--dark-gray);
+  --popover-foreground: var(--white);
+  --primary: var(--deep-purple);
+  --primary-foreground: var(--white);
+  --secondary: var(--purple-tone-1);
+  --secondary-foreground: var(--white);
+  --muted: var(--gray-tint-1);
+  --muted-foreground: var(--white-shade-1);
+  --accent: var(--purple-tint-1);
+  --accent-foreground: var(--white);
+  --destructive: #DC2626;
+  --destructive-foreground: var(--white);
+  --border: var(--gray-tint-2);
+  --input: var(--dark-gray);
+  --input-background: var(--gray-shade-1);
+  --switch-background: var(--gray-tint-2);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: var(--deep-purple);
+  
+  /* Chart Colors using Purple Palette */
+  --chart-1: var(--purple-tint-1);
+  --chart-2: var(--purple-tint-2);
+  --chart-3: var(--purple-tone-1);
+  --chart-4: var(--purple-shade-1);
+  --chart-5: var(--purple-tint-3);
+  
+  --radius: 0.75rem;
+  
+  /* Sidebar */
+  --sidebar: var(--black-tint-1);
+  --sidebar-foreground: var(--white);
+  --sidebar-primary: var(--deep-purple);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: var(--purple-tone-1);
+  --sidebar-accent-foreground: var(--white);
+  --sidebar-border: var(--gray-tint-1);
+  --sidebar-ring: var(--deep-purple);
+}
+
+.dark {
+  --background: var(--black);
+  --foreground: var(--white);
+  --card: var(--black-tint-1);
+  --card-foreground: var(--white);
+  --popover: var(--dark-gray);
+  --popover-foreground: var(--white);
+  --primary: var(--deep-purple);
+  --primary-foreground: var(--white);
+  --secondary: var(--purple-tone-1);
+  --secondary-foreground: var(--white);
+  --muted: var(--gray-tint-1);
+  --muted-foreground: var(--white-shade-1);
+  --accent: var(--purple-tint-1);
+  --accent-foreground: var(--white);
+  --destructive: #DC2626;
+  --destructive-foreground: var(--white);
+  --border: var(--gray-tint-2);
+  --input: var(--dark-gray);
+  --ring: var(--deep-purple);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: var(--purple-tint-1);
+  --chart-2: var(--purple-tint-2);
+  --chart-3: var(--purple-tone-1);
+  --chart-4: var(--purple-shade-1);
+  --chart-5: var(--purple-tint-3);
+  --sidebar: var(--black-tint-1);
+  --sidebar-foreground: var(--white);
+  --sidebar-primary: var(--deep-purple);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: var(--purple-tone-1);
+  --sidebar-accent-foreground: var(--white);
+  --sidebar-border: var(--gray-tint-1);
+  --sidebar-ring: var(--deep-purple);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* ============================================
+   LIBRIS CORE ANIMATIONS
+   ============================================ */
+
+/* Smooth scale animation for interactive elements */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Purple glow animation */
+@keyframes purpleGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(75, 0, 130, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(75, 0, 130, 0.6);
+  }
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+.animate-purple-glow {
+  animation: purpleGlow 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ============================================
+   LIBRIS CORE UTILITY CLASSES
+   ============================================ */
+
+/* Purple gradient backgrounds */
+.bg-purple-gradient {
+  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--purple-shade-1) 100%);
+}
+
+.bg-purple-gradient-light {
+  background: linear-gradient(135deg, var(--purple-tint-1) 0%, var(--purple-tint-2) 100%);
+}
+
+/* Purple shadow effects */
+.shadow-purple-sm {
+  box-shadow: 0 2px 8px rgba(75, 0, 130, 0.15);
+}
+
+.shadow-purple-md {
+  box-shadow: 0 4px 16px rgba(75, 0, 130, 0.25);
+}
+
+.shadow-purple-lg {
+  box-shadow: 0 8px 24px rgba(75, 0, 130, 0.35);
+}
+
+.shadow-purple-xl {
+  box-shadow: 0 12px 32px rgba(75, 0, 130, 0.45);
+}
+
+/* Hover effects with purple highlights */
+.hover-purple-glow:hover {
+  box-shadow: 0 0 20px rgba(75, 0, 130, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Focus ring with purple */
+.focus-purple:focus {
+  outline: 2px solid var(--deep-purple);
+  outline-offset: 2px;
+}
+
+/* Text gradients */
+.text-purple-gradient {
+  background: linear-gradient(135deg, var(--deep-purple) 0%, var(--purple-tint-1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(75, 0, 130, 0.35);
+}
+
+/* Button press animation */
+.button-press:active {
+  transform: scale(0.98);
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
